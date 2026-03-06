@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*bara de navigare*/
+
+.text-mov {
+    color: #aa046d;
+    font-weight: 800;
+}
+
+.text-negru {
+    color: #343333;
+    font-weight: 400; 
+}
+
+.navbar {
+    background-color: #f2eff5 ;
+}
+
+.navbar-brand, 
+.nav-link {
+    color: #aa046d ;
+}
+
+.nav-link:hover {
+    color: #333 ; /* Schimbare la atingere */
+}
+
+.nav-link.active {
+    /*background-color: #aa046d ;  Fundal mov pentru butonul activ */
+    color: #f2eff5           ;
+    border-radius: 5px;
+}
+
+.logo-sigla {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*home */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('fundal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    width: 450px;
+    height: 5px;
+    background-color: #aa046d; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* carusel  */
+#mainCarousel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* cardurile cu animale*/
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* Imaginea din interiorul cardului */
+.custom-card .card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: contain; 
+    background-color: #f8f9fa;
+}
+
+.btn-outline-primary {
+    color: #aa046d;
+    border-color: #aa046d;
+}
+
+.btn-outline-primary:hover {
+    background-color: #aa046d;
+    color: white;
+}
+
+
+/*modale */
+.modal-body img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Face poza rotundă */
+    border: 5px solid #f2eff5;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* ascunde secțiunile */
+.hidden {
+    display: none !important;
+}
+/* Butonul de Login  și Register  */
+#loginForm .btn-primary, 
+#registerForm .btn-success {
+    background-color: #ff69b4 !important; 
+    border-color: #ff69b4 !important;
+    color: white !important;
+}
+
+/* Butonul de Logout (cel din navbar) */
+#logout-btn {
+    background-color: #ff69b4 !important; 
+    border-color: #ff69b4 !important;
+}
+
+/* Efect la trecerea cu mouse-ul  */
+#loginForm .btn-primary:hover, 
+#registerForm .btn-success:hover,
+#logout-btn:hover {
+    background-color: #ff1493 !important; 
+}
+
